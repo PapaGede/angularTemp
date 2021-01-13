@@ -7,8 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "postinstall": "ng build --output-path angularapp  --aot --prod"
+    "e2e": "ng e2e"
+
   },
   "private": true,
   "dependencies": {
@@ -55,5 +55,8 @@
   "engines": {
     "node": "v12.14.0",
     "npm": "6.13.4"
+  },
+  "script": {
+    "postinstall": "ng build --output-path angularapp  --aot --prod"
   }
 }
